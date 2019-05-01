@@ -18,7 +18,6 @@ namespace wsDemo
         public RegForm()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void button2_Click(object sender, EventArgs e)

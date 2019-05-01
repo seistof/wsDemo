@@ -52,6 +52,18 @@
     <Compile Include="AuthForm.Designer.cs">
       <DependentUpon>AuthForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FabricForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FabricForm.Designer.cs">
+      <DependentUpon>FabricForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FurnitureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FurnitureForm.Designer.cs">
+      <DependentUpon>FurnitureForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegForm.cs">
@@ -66,8 +78,19 @@
     <Compile Include="StockmanForm.Designer.cs">
       <DependentUpon>StockmanForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ws_demoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ws_demoDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AuthForm.resx">
       <DependentUpon>AuthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FabricForm.resx">
+      <DependentUpon>FabricForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FurnitureForm.resx">
+      <DependentUpon>FurnitureForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,6 +104,9 @@
     <EmbeddedResource Include="RegForm.resx">
       <DependentUpon>RegForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StockmanForm.resx">
+      <DependentUpon>StockmanForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -90,9 +116,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ws_demoDataSet.xsc">
+      <DependentUpon>ws_demoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ws_demoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ws_demoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ws_demoDataSet.xss">
+      <DependentUpon>ws_demoDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
