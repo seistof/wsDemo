@@ -10,24 +10,17 @@ using System.Windows.Forms;
 
 namespace wsDemo
 {
-    public partial class StockmanForm : Form
+    public partial class ManagerForm : Form
     {
-        public StockmanForm()
+        public ManagerForm()
         {
             InitializeComponent();
         }
 
-        private void fabricToolStripMenuItem_Click(object sender, EventArgs e)
+        private void itemsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form fabricView = new FabricForm();
-            fabricView.Show();
-            this.Hide();
-        }
-
-        private void furnitureToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form furnitureView = new FurnitureForm();
-            furnitureView.Show();
+            Form itemView = new ItemForm();
+            itemView.Show();
             this.Hide();
         }
 
@@ -36,7 +29,7 @@ namespace wsDemo
             this.Close();
         }
 
-        private void StockmanForm_FormClosed(object sender, FormClosedEventArgs e)
+        private void ManagerForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Form back = Application.OpenForms["AuthForm"];
             back.Show();

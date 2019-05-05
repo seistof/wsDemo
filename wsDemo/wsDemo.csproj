@@ -52,6 +52,18 @@
     <Compile Include="AuthForm.Designer.cs">
       <DependentUpon>AuthForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectorForm.Designer.cs">
+      <DependentUpon>DirectorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FabricForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,18 @@
     </Compile>
     <Compile Include="FurnitureForm.Designer.cs">
       <DependentUpon>FurnitureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemForm.Designer.cs">
+      <DependentUpon>ItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerForm.Designer.cs">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,14 +107,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ws_demoDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ws_demoDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ws_demoDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ws_demoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ws_demoDataSet2.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AuthForm.resx">
       <DependentUpon>AuthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectorForm.resx">
+      <DependentUpon>DirectorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FabricForm.resx">
       <DependentUpon>FabricForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FurnitureForm.resx">
       <DependentUpon>FurnitureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemForm.resx">
+      <DependentUpon>ItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerForm.resx">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,6 +172,28 @@
     </None>
     <None Include="ws_demoDataSet.xss">
       <DependentUpon>ws_demoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ws_demoDataSet1.xsc">
+      <DependentUpon>ws_demoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ws_demoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ws_demoDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ws_demoDataSet1.xss">
+      <DependentUpon>ws_demoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ws_demoDataSet2.xsc">
+      <DependentUpon>ws_demoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ws_demoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ws_demoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ws_demoDataSet2.xss">
+      <DependentUpon>ws_demoDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

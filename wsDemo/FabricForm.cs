@@ -19,6 +19,7 @@ namespace wsDemo
         DataSet ds;
         SqlDataAdapter sda;
         DataSet changes;
+        bool firstLoad = true;
 
         public FabricForm()
         {
@@ -33,10 +34,16 @@ namespace wsDemo
             sda.Fill(ds, "fabric");
             dataGridView1.DataSource = ds.Tables["fabric"];
 
-            DataGridViewImageColumn img = new DataGridViewImageColumn();
-            img.Name = "imgage";
-            img.HeaderText = "Картинка";
-            dataGridView1.Columns.Add(img);
+            
+            if (firstLoad == true)
+            {
+                DataGridViewImageColumn img = new DataGridViewImageColumn();
+                img.Name = "imgage";
+                img.HeaderText = "Картинка";
+                dataGridView1.Columns.Add(img);
+                firstLoad = false;
+            }
+
 
             for (int i = 0; i < dataGridView1.RowCount; i++)
             {

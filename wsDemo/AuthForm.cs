@@ -53,27 +53,35 @@ namespace wsDemo
                 switch (role)
                 {
                     case "client":
-                        //form = new ClientForm();
+                        form = new ClientForm();
                         this.Hide();
                         form.Show();
+                        textBox1.Text = "";
+                        textBox2.Text = "";
                         break;
 
                     case "stockman":
                         form = new StockmanForm();
                         this.Hide();
                         form.Show();
+                        textBox1.Text = "";
+                        textBox2.Text = "";
                         break;
 
                     case "manager":
-                        //form = new ManagerForm();
+                        form = new ManagerForm();
                         this.Hide();
                         form.Show();
+                        textBox1.Text = "";
+                        textBox2.Text = "";
                         break;
 
                     case "director":
-                        //form = new DirectorForm();
+                        form = new DirectorForm();
                         this.Hide();
                         form.Show();
+                        textBox1.Text = "";
+                        textBox2.Text = "";
                         break;
 
                     default:
