@@ -44,5 +44,15 @@ namespace wsDemo.Properties {
                 return ((string)(this["ws_demoConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=INSTANCE-1;Initial Catalog=stavrovsky;Integrated Security=True")]
+        public string strConnection {
+            get {
+                return ((string)(this["strConnection"]));
+            }
+        }
     }
 }
