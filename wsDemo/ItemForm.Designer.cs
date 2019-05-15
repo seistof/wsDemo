@@ -30,26 +30,26 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ws_demoDataSet1 = new wsDemo.ws_demoDataSet1();
-            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.itemTableAdapter = new wsDemo.ws_demoDataSet1TableAdapters.itemTableAdapter();
-            this.ws_demoDataSet2 = new wsDemo.ws_demoDataSet2();
-            this.itemBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.itemTableAdapter1 = new wsDemo.ws_demoDataSet2TableAdapters.itemTableAdapter();
             this.articleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.widthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lengthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.commentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.ws_demoDataSet2 = new wsDemo.ws_demoDataSet2();
+            this.ws_demoDataSet1 = new wsDemo.ws_demoDataSet1();
+            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.itemTableAdapter = new wsDemo.ws_demoDataSet1TableAdapters.itemTableAdapter();
+            this.itemTableAdapter1 = new wsDemo.ws_demoDataSet2TableAdapters.itemTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ws_demoDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ws_demoDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ws_demoDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -68,34 +68,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(660, 400);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // ws_demoDataSet1
-            // 
-            this.ws_demoDataSet1.DataSetName = "ws_demoDataSet1";
-            this.ws_demoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // itemBindingSource
-            // 
-            this.itemBindingSource.DataMember = "item";
-            this.itemBindingSource.DataSource = this.ws_demoDataSet1;
-            // 
-            // itemTableAdapter
-            // 
-            this.itemTableAdapter.ClearBeforeFill = true;
-            // 
-            // ws_demoDataSet2
-            // 
-            this.ws_demoDataSet2.DataSetName = "ws_demoDataSet2";
-            this.ws_demoDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // itemBindingSource1
-            // 
-            this.itemBindingSource1.DataMember = "item";
-            this.itemBindingSource1.DataSource = this.ws_demoDataSet2;
-            // 
-            // itemTableAdapter1
-            // 
-            this.itemTableAdapter1.ClearBeforeFill = true;
             // 
             // articleDataGridViewTextBoxColumn
             // 
@@ -132,6 +104,34 @@
             this.commentDataGridViewTextBoxColumn.DataPropertyName = "comment";
             this.commentDataGridViewTextBoxColumn.HeaderText = "comment";
             this.commentDataGridViewTextBoxColumn.Name = "commentDataGridViewTextBoxColumn";
+            // 
+            // itemBindingSource1
+            // 
+            this.itemBindingSource1.DataMember = "item";
+            this.itemBindingSource1.DataSource = this.ws_demoDataSet2;
+            // 
+            // ws_demoDataSet2
+            // 
+            this.ws_demoDataSet2.DataSetName = "ws_demoDataSet2";
+            this.ws_demoDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ws_demoDataSet1
+            // 
+            this.ws_demoDataSet1.DataSetName = "ws_demoDataSet1";
+            this.ws_demoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // itemBindingSource
+            // 
+            this.itemBindingSource.DataMember = "item";
+            this.itemBindingSource.DataSource = this.ws_demoDataSet1;
+            // 
+            // itemTableAdapter
+            // 
+            this.itemTableAdapter.ClearBeforeFill = true;
+            // 
+            // itemTableAdapter1
+            // 
+            this.itemTableAdapter1.ClearBeforeFill = true;
             // 
             // button1
             // 
@@ -174,13 +174,14 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ItemForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ItemForm";
             this.Load += new System.EventHandler(this.ItemForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ws_demoDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ws_demoDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ws_demoDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }

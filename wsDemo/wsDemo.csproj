@@ -58,6 +58,12 @@
     <Compile Include="ClientForm.Designer.cs">
       <DependentUpon>ClientForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConstructorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConstructorForm.Designer.cs">
+      <DependentUpon>ConstructorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DirectorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientForm.resx">
       <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConstructorForm.resx">
+      <DependentUpon>ConstructorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DirectorForm.resx">
       <DependentUpon>DirectorForm.cs</DependentUpon>

@@ -18,6 +18,10 @@ namespace wsDemo
         public AuthForm()
         {
             InitializeComponent();
+            Client.Value = false;
+            Manager.Value = false;
+            Stockman.Value = false;
+            Director.Value = false;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -46,7 +50,7 @@ namespace wsDemo
                 while (reader.Read())
                 {
                     role = reader[2].ToString();
-                    name = reader[2].ToString();
+                    name = reader[3].ToString();
                 }
 
                 Form form = null;
@@ -58,6 +62,7 @@ namespace wsDemo
                         form.Show();
                         textBox1.Text = "";
                         textBox2.Text = "";
+                        Client.Value = true;
                         break;
 
                     case "stockman":
@@ -66,6 +71,7 @@ namespace wsDemo
                         form.Show();
                         textBox1.Text = "";
                         textBox2.Text = "";
+                        Stockman.Value = true;
                         break;
 
                     case "manager":
@@ -74,6 +80,7 @@ namespace wsDemo
                         form.Show();
                         textBox1.Text = "";
                         textBox2.Text = "";
+                        Manager.Value = true;
                         break;
 
                     case "director":
@@ -82,6 +89,7 @@ namespace wsDemo
                         form.Show();
                         textBox1.Text = "";
                         textBox2.Text = "";
+                        Director.Value = true;
                         break;
 
                     default:
