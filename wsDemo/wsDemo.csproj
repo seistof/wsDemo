@@ -128,6 +128,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ws_demoDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ws_demoDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ws_demoDataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AuthForm.resx">
       <DependentUpon>AuthForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +224,17 @@
     </None>
     <None Include="ws_demoDataSet2.xss">
       <DependentUpon>ws_demoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ws_demoDataSet3.xsc">
+      <DependentUpon>ws_demoDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ws_demoDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ws_demoDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ws_demoDataSet3.xss">
+      <DependentUpon>ws_demoDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

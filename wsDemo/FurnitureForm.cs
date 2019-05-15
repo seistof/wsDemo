@@ -22,8 +22,8 @@ namespace wsDemo
 
         private void FurnitureForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'stavrovskyDataSet.furniture' table. You can move, or remove it, as needed.
-            this.furnitureTableAdapter1.Fill(this.stavrovskyDataSet.furniture);
+            // TODO: This line of code loads data into the 'ws_demoDataSet3.furniture' table. You can move, or remove it, as needed.
+            this.furnitureTableAdapter1.Fill(this.ws_demoDataSet3.furniture);
 
         }
 
