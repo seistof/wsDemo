@@ -22,8 +22,9 @@ namespace wsDemo
 
         private void FurnitureForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'ws_demoDataSet.furniture' table. You can move, or remove it, as needed.
-            this.furnitureTableAdapter.Fill(this.ws_demoDataSet.furniture);
+            // TODO: This line of code loads data into the 'stavrovskyDataSet.furniture' table. You can move, or remove it, as needed.
+            this.furnitureTableAdapter1.Fill(this.stavrovskyDataSet.furniture);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,12 +36,17 @@ namespace wsDemo
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            foreach (DataGridViewRow item in this.dataGridView1.SelectedRows)
+            {
+                dataGridView1.Rows.RemoveAt(item.Index);
+                
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.FurnitureForm_Load(sender, e);
+            MessageBox.Show("Сохранено!");
         }
     }
 }

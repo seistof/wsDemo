@@ -35,7 +35,6 @@
             this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.widthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lengthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.furnitureBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -44,6 +43,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.furnitureTableAdapter = new wsDemo.ws_demoDataSetTableAdapters.furnitureTableAdapter();
+<<<<<<< HEAD
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -51,6 +51,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.ws_demoDataSet)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+=======
+            this.stavrovskyDataSet = new wsDemo.stavrovskyDataSet();
+            this.furnitureBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.furnitureTableAdapter1 = new wsDemo.stavrovskyDataSetTableAdapters.furnitureTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.furnitureBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ws_demoDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stavrovskyDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.furnitureBindingSource1)).BeginInit();
+>>>>>>> 15a0ed5a98f5cea9497ccf1ba0faab6a4798de66
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -63,12 +73,16 @@
             this.typeDataGridViewTextBoxColumn,
             this.widthDataGridViewTextBoxColumn,
             this.lengthDataGridViewTextBoxColumn,
-            this.weightDataGridViewTextBoxColumn,
             this.imageDataGridViewImageColumn,
             this.priceDataGridViewTextBoxColumn});
+<<<<<<< HEAD
             this.dataGridView1.DataSource = this.furnitureBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+=======
+            this.dataGridView1.DataSource = this.furnitureBindingSource1;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+>>>>>>> 15a0ed5a98f5cea9497ccf1ba0faab6a4798de66
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(864, 412);
             this.dataGridView1.TabIndex = 0;
@@ -102,12 +116,6 @@
             this.lengthDataGridViewTextBoxColumn.DataPropertyName = "length";
             this.lengthDataGridViewTextBoxColumn.HeaderText = "length";
             this.lengthDataGridViewTextBoxColumn.Name = "lengthDataGridViewTextBoxColumn";
-            // 
-            // weightDataGridViewTextBoxColumn
-            // 
-            this.weightDataGridViewTextBoxColumn.DataPropertyName = "weight";
-            this.weightDataGridViewTextBoxColumn.HeaderText = "weight";
-            this.weightDataGridViewTextBoxColumn.Name = "weightDataGridViewTextBoxColumn";
             // 
             // imageDataGridViewImageColumn
             // 
@@ -168,6 +176,7 @@
             // 
             this.furnitureTableAdapter.ClearBeforeFill = true;
             // 
+<<<<<<< HEAD
             // panel1
             // 
             this.panel1.Controls.Add(this.dataGridView1);
@@ -187,6 +196,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(864, 43);
             this.panel2.TabIndex = 7;
+=======
+            // stavrovskyDataSet
+            // 
+            this.stavrovskyDataSet.DataSetName = "stavrovskyDataSet";
+            this.stavrovskyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // furnitureBindingSource1
+            // 
+            this.furnitureBindingSource1.DataMember = "furniture";
+            this.furnitureBindingSource1.DataSource = this.stavrovskyDataSet;
+            // 
+            // furnitureTableAdapter1
+            // 
+            this.furnitureTableAdapter1.ClearBeforeFill = true;
+>>>>>>> 15a0ed5a98f5cea9497ccf1ba0faab6a4798de66
             // 
             // FurnitureForm
             // 
@@ -202,8 +226,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.furnitureBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ws_demoDataSet)).EndInit();
+<<<<<<< HEAD
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.stavrovskyDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.furnitureBindingSource1)).EndInit();
+>>>>>>> 15a0ed5a98f5cea9497ccf1ba0faab6a4798de66
             this.ResumeLayout(false);
 
         }
@@ -222,10 +251,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn widthDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lengthDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn weightDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn imageDataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
+<<<<<<< HEAD
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+=======
+        private stavrovskyDataSet stavrovskyDataSet;
+        private System.Windows.Forms.BindingSource furnitureBindingSource1;
+        private stavrovskyDataSetTableAdapters.furnitureTableAdapter furnitureTableAdapter1;
+>>>>>>> 15a0ed5a98f5cea9497ccf1ba0faab6a4798de66
     }
 }
